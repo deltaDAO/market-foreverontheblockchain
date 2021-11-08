@@ -38,9 +38,10 @@ export default function Menu(): ReactElement {
   return (
     <nav className={styles.menu}>
       <Link to="/" className={styles.logo}>
-        <Logo branding />
+        <Logo noWordmark />
         <h1 className={styles.title}>
-          {siteTitle} <Badge label={badge} />
+          {siteTitle}
+          {/* <Badge label={badge} /> */}
         </h1>
       </Link>
 

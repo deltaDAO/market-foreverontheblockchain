@@ -27,7 +27,7 @@
 
 .input {
   background-color: transparent;
-  height: 36px;
+  height: 43.24px;
   margin: 0;
   outline: 0;
   padding-right: var(--spacer);
@@ -46,7 +46,7 @@
 }
 
 .input::placeholder {
-  color: var(--brand-grey-lighter);
+  color: var(--brand-black);
   opacity: 1;
 }
 
@@ -75,8 +75,8 @@
 }
 
 .searchIcon {
-  fill: currentColor;
+  /* fill: currentColor; */
   transition: 0.2s ease-out;
-  width: var(--font-size-h5);
-  height: var(--font-size-h5);
+  width: var(--font-size-small);
+  height: var(--font-size-small);
 }

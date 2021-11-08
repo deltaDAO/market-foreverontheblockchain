@@ -1,6 +1,6 @@
 .button {
   font-family: var(--font-family-base);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-base);
   font-size: var(--font-size-small);
   text-transform: uppercase;
   border: 1px solid var(--border-color);
@@ -18,17 +18,19 @@
 
 .button,
 .address {
-  color: var(--brand-grey-lighter);
+  color: var(--brand-black);
 }
 
 .button:hover .address {
-  color: var(--brand-grey-dimmed);
+  color: var(--brand-white);
+  background: var(--brand-black);
 }
 
 .button:hover,
 .button:focus {
   transform: none;
   outline: 0;
+  background: var(--brand-black);
 }
 
 .button.initial {

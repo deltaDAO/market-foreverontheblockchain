@@ -72,8 +72,9 @@
     margin: 0;
     margin-right: var(--spacer);
     display: block;
-    color: var(--brand-grey-dimmed);
-    font-size: var(--font-size-h4);
+    color: var(--brand-black);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
   }
 }
 
@@ -101,9 +102,9 @@
   display: block;
   padding: calc(var(--spacer) / 4) calc(var(--spacer) / 2);
   text-transform: lowercase;
-  color: var(--brand-grey-lighter);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-large);
+  color: var(--brand-black);
+  font-weight: var(--font-weight-base);
+  font-size: var(--font-size-small);
   position: relative;
   z-index: 1;
   padding: calc(var(--spacer) / 4);
@@ -130,22 +131,22 @@
 .actions button,
 .actions div[class*='tooltip'],
 .actions div[class*='network'] {
-  border-color: var(--brand-grey-lighter);
-  background: transparent;
+  border-color: var(--brand-black);
+  background: var(--brand-white);
 }
 
 .actions svg {
-  fill: var(--brand-grey-lighter) !important;
+  fill: var(--brand-black) !important;
 }
 .actions *:hover svg:not(*[class*='searchIcon']) {
-  fill: var(--brand-grey-dimmed) !important;
+  fill: var(--brand-white) !important;
 }
 
 .actions,
 .link:hover,
 .link:focus,
 .link:active {
-  color: var(--brand-grey-dimmed);
+  color: var(--brand-black);
 }
 
 .link[aria-current],

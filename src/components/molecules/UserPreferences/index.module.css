@@ -22,7 +22,7 @@ svg.caret {
   height: var(--font-size-small);
   fill: var(--border-color);
   margin-left: calc(var(--spacer) / 4);
-  transition: transform 0.2s ease-out;
+  /* transition: transform 0.2s ease-out; */
   display: none;
 }
 
