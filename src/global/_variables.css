@@ -23,8 +23,8 @@
   --brand-alert-orange: #b35f36;
   --brand-alert-yellow: #eac146;
 
-  --color-primary: #ff4092;
-  --color-secondary: #8b98a9;
+  --color-primary: #b69443;
+  --color-secondary: rgba(45, 52, 54, 0.6);
 
   /* Only use these vars for most color referencing for easy light/dark mode */
   --font-color-text: var(--brand-black);
@@ -46,7 +46,7 @@
   --font-size-root: 18px;
   --font-size-base: 1rem;
   --font-size-large: 1.2rem;
-  --font-size-small: 0.85rem;
+  --font-size-small: 0.89rem;
   --font-size-mini: 0.65rem;
   --font-size-text: 1rem;
   --font-size-label: 1rem;

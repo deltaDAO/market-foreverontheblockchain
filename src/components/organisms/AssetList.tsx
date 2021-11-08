@@ -92,11 +92,13 @@ const AssetList: React.FC<AssetListProps> = ({
       </div>
 
       {showPagination && (
-        <Pagination
-          totalPages={totalPages}
-          currentPage={page}
-          onChangePage={handlePageChange}
-        />
+        <div className={styles.pagination}>
+          <Pagination
+            totalPages={totalPages}
+            currentPage={page}
+            onChangePage={handlePageChange}
+          />
+        </div>
       )}
     </>
   ) : (
