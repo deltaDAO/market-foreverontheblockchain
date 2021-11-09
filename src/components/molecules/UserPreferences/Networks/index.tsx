@@ -4,7 +4,6 @@ import { useSiteMetadata } from '../../../../hooks/useSiteMetadata'
 import FormHelp from '../../../atoms/Input/Help'
 import { EthereumListsChain, getNetworkDataById } from '../../../../utils/web3'
 import Tooltip from '../../../atoms/Tooltip'
-import { ReactComponent as Caret } from '../../../../images/caret.svg'
 import { ReactComponent as Network } from '../../../../images/network.svg'
 import { ReactComponent as AddCircle } from '../../../../images/add_circle_outline.svg'
 import NetworksList from './NetworksList'
@@ -76,7 +75,6 @@ export default function Networks(): ReactElement {
       >
         <AddCircle aria-hidden="true" className={stylesIndex.caret} />
         <Network aria-label="Networks" className={stylesIndex.icon} />
-        {/* <Caret aria-hidden="true" className={stylesIndex.caret} /> */}
 
         <div className={styles.chainsSelected}>
           {chainIds.map((chainId) => (

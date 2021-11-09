@@ -6,7 +6,7 @@
   border: 1px solid var(--border-color);
   box-shadow: none;
   width: 100%;
-  background: var(--background-content);
+  background: var(--brand-white);
   padding: calc(var(--spacer) / 3);
   margin: 0;
   border-radius: var(--border-radius);
@@ -132,13 +132,13 @@
 
 .radio:checked,
 .checkbox:checked {
-  border-color: var(--color-primary);
-  background: var(--color-primary);
+  border-color: var(--brand-gold);
+  background: var(--brand-gold);
 }
 
 .radio:focus,
 .checkbox:focus {
-  box-shadow: 0 0 0 var(--color-primary);
+  box-shadow: 0 0 0 var(--brand-gold);
 }
 
 .radio:checked::after,
@@ -231,7 +231,7 @@ input[type='range']:focus {
 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -0.5rem;
-  background: var(--brand-gradient);
+  background: var(--brand-gold);
   border: 2px solid var(--border-color);
   width: var(--font-size-h4);
   height: var(--font-size-h4);
@@ -241,7 +241,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 input[type='range']::-moz-range-thumb {
-  background: var(--brand-gradient);
+  background: var(--brand-gold);
   border: 2px solid var(--border-color);
   width: var(--font-size-large);
   height: var(--font-size-large);
@@ -296,7 +296,7 @@ input[type='range']::-moz-range-track {
 .select.small {
   font-size: var(--font-size-small);
   height: 34px;
-  padding: calc(var(--spacer) / 4);
+  padding: calc(var(--spacer) / 6) calc(var(--spacer) / 3);
 }
 
 .small::placeholder {
@@ -313,7 +313,8 @@ input[type='range']::-moz-range-track {
   padding-right: 2rem;
 
   /* custom arrow */
-  background-position: calc(100% - 14px) 1rem, calc(100% - 9px) 1rem, 100% 0;
+  background-position: calc(100% - 18px) 0.8rem, calc(100% - 13px) 0.8rem,
+    100% 0;
   background-size: 5px 5px, 5px 5px, 2rem 3rem;
 }
 
@@ -340,4 +341,9 @@ input[type='range']::-moz-range-track {
   /* custom arrow */
   background-position: calc(100% - 14px) 1rem, calc(100% - 9px) 1rem, 100% 0;
   background-size: 5px 5px, 5px 5px, 2rem 3rem;
+}
+
+/* remove default style for webkit shadow DOM elements */
+input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
 }

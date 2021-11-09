@@ -13,13 +13,13 @@
 
 .name {
   font-size: var(--font-size-small);
-  color: var(--brand-grey-dimmed);
+  color: var(--brand-black);
 }
 
 .badge {
   margin-left: calc(var(--spacer) / 8);
-  background-color: var(--brand-grey-dark);
-  color: var(--brand-grey-dimmed);
+  background-color: var(--brand-black);
+  color: var(--brand-white);
 }
 
 .warning {

@@ -93,6 +93,7 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
+  /* margin-left: auto; */
 }
 
 .navigation::-webkit-scrollbar,
@@ -131,7 +132,7 @@
   fill: var(--brand-black) !important;
 }
 .actions *:hover svg:not(*[class*='searchIcon']) {
-  fill: var(--brand-white) !important;
+  fill: var(--brand-black) !important;
 }
 
 .actions,

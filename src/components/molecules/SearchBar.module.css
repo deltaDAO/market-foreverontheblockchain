@@ -8,13 +8,12 @@
 .button {
   color: var(--color-text);
   cursor: pointer;
-  background: transparent;
+  background: transparent !important;
   border: none;
   border-radius: var(--border-radius);
   box-shadow: none;
   position: absolute;
   margin-right: calc(var(--spacer) / 4);
-  height: 90%;
   right: 1px;
   left: 1px;
   top: 1px;
@@ -28,7 +27,7 @@
 
 .input {
   background-color: transparent;
-  height: 43.24px;
+  height: 100%;
   margin: 0;
   outline: 0;
   padding-right: var(--spacer);
@@ -38,8 +37,8 @@
 
 .input:focus {
   width: calc(100% - var(--spacer));
-  background-color: var(--background-content);
-  border-color: var(--brand-grey-lighter);
+  /* background-color: var(--background-content);
+  border-color: var(--brand-grey-lighter); */
   position: fixed;
   left: calc(var(--spacer) / 2);
   right: 0;
