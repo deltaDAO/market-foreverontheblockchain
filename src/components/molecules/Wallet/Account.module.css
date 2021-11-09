@@ -66,8 +66,8 @@
 }
 
 .button svg {
-  width: 1em;
-  height: 1em;
+  width: 1.1em;
+  height: 1.1em;
   fill: var(--border-color);
   display: inline-block;
   vertical-align: middle;
@@ -76,7 +76,7 @@
 }
 
 [aria-expanded='true'] .button svg {
-  transform: rotate(180deg);
+  transform: rotate(135deg);
 }
 
 .status {

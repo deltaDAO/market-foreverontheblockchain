@@ -13,16 +13,16 @@
 }
 
 .preferences[aria-expanded='true'] svg {
-  transform: rotate(180deg);
+  transform: rotate(135deg);
 }
 
 .caret,
 svg.caret {
-  width: var(--font-size-small);
-  height: var(--font-size-small);
+  width: var(--font-size-base);
+  height: var(--font-size-base);
   fill: var(--border-color);
-  margin-left: calc(var(--spacer) / 4);
-  /* transition: transform 0.2s ease-out; */
+  margin-right: calc(var(--spacer) / 4);
+  transition: transform 0.2s ease-out;
   display: none;
 }
 
@@ -34,7 +34,7 @@ svg.caret {
 }
 
 .icon {
-  fill: var(--brand-grey-light);
+  fill: var(--brand-black);
   transition: 0.2s ease-out;
   width: 1em;
   height: 1em;

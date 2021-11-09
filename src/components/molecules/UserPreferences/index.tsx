@@ -5,6 +5,7 @@ import styles from './index.module.css'
 import Currency from './Currency'
 import Debug from './Debug'
 import { ReactComponent as Caret } from '../../../images/caret.svg'
+import { ReactComponent as AddCircle } from '../../../images/add_circle_outline.svg'
 import useDarkMode from 'use-dark-mode'
 import Appearance from './Appearance'
 import { darkModeConfig } from '../../../../app.config'
@@ -27,8 +28,9 @@ export default function UserPreferences(): ReactElement {
       trigger="click focus"
       className={styles.preferences}
     >
+      <AddCircle aria-hidden="true" className={styles.caret} />
       <Cog aria-label="Preferences" className={styles.icon} />
-      <Caret aria-hidden="true" className={styles.caret} />
+      {/* <Caret aria-hidden="true" className={styles.caret} /> */}
     </Tooltip>
   )
 }

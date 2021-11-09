@@ -1,24 +1,24 @@
 .search {
   display: flex;
   position: relative;
+  /* border: 1px solid var(--brand-black); */
+  border-radius: var(--border-radius);
 }
 
 .button {
   color: var(--color-text);
   cursor: pointer;
-  background: var(--background-content);
+  background: transparent;
   border: none;
   border-radius: var(--border-radius);
   box-shadow: none;
-  padding: 0;
   position: absolute;
-  padding: calc(var(--spacer) / 4);
-  width: 100%;
-  right: 2px;
-  left: 2px;
-  top: 2px;
-  bottom: 2px;
-  /* z-index: -1; */
+  margin-right: calc(var(--spacer) / 4);
+  height: 90%;
+  right: 1px;
+  left: 1px;
+  top: 1px;
+  bottom: 1px;
 }
 
 .button:hover,
@@ -43,7 +43,6 @@
   position: fixed;
   left: calc(var(--spacer) / 2);
   right: 0;
-  z-index: 2;
 }
 
 .input::placeholder {
@@ -77,6 +76,7 @@
 
 .searchIcon {
   color: currentColor;
+  background: transparent;
   transition: 0.2s ease-out;
   width: var(--font-size-small);
   height: var(--font-size-small);

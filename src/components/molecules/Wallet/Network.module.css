@@ -1,5 +1,6 @@
 .network {
   border: 1px solid var(--border-color);
+  border: none;
   border-right: none;
   border-top-left-radius: var(--border-radius);
   border-bottom-left-radius: var(--border-radius);

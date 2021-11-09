@@ -1,5 +1,6 @@
 .tooltip {
   display: inline-block;
+  border-radius: var(--border-radius);
 }
 
 .content {

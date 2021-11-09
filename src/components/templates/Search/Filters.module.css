@@ -44,10 +44,7 @@ button.filter,
 
 .filter.selected::after {
   content: url(../../../images/close_circle_outline.svg);
-  height: 1px;
-  width: 1px;
   margin-left: calc(var(--spacer) / 6);
-  color: var(--font-color-text);
 }
 
 .showClear:hover {
