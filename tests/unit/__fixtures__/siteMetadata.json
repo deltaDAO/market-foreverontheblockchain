@@ -1,10 +1,10 @@
 {
   "site": {
     "siteMetadata": {
-      "siteTitle": "Ocean Market",
+      "siteTitle": "forever on the blockchain",
       "siteTagline": "A marketplace to find, publish and trade data sets in the Ocean Network.",
       "siteUrl": "https://market.oceanprotocol.com",
-      "siteIcon": "node_modules/@oceanprotocol/art/logo/favicon-white.png",
+      "siteIcon": "../src/images/favicon.ico",
       "copyright": "All Rights Reserved. Powered by [Ocean Protocol](https://oceanprotocol.com)",
       "menu": [
         {
