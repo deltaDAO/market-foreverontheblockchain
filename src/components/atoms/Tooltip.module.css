@@ -24,7 +24,6 @@
   margin-bottom: -0.1em;
   margin-left: calc(var(--spacer) / 6);
   /* fill: var(--brand-black); */
-  border: 2px solid var(--brand-black);
 }
 
 .arrow,

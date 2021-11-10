@@ -15,7 +15,7 @@
 }
 
 .tokenlist.highlight {
-  background: var(--background-highlight);
+  /* background: var(--background-content); */
 }
 
 .tokens {

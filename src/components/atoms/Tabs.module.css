@@ -5,6 +5,7 @@
   margin: var(--spacer) 0;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
   border-radius: var(--border-radius);
+  margin-top: 0;
 }
 
 .tab {
@@ -14,7 +15,6 @@
   font-size: var(--font-size-small);
   cursor: pointer;
   color: var(--color-secondary);
-  min-width: 100px;
 }
 
 .tab[aria-selected='true'] {
