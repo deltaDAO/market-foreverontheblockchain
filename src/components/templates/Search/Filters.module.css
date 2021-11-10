@@ -23,6 +23,7 @@ button.filter,
   margin-right: calc(var(--spacer) / 6);
   color: var(--color-secondary);
   font-weight: var(--font-weight-base);
+  text-transform: capitalize;
 
   /* the only thing not possible to overwrite button style="text" with more specifity of selectors, so sledgehammer */
   padding: calc(var(--spacer) / 6) !important;
@@ -38,7 +39,6 @@ button.filter,
 .filter.selected {
   font-weight: var(--font-weight-bold);
   color: var(--font-color-text);
-  border-color: var(--brand-black);
   border-bottom: 2px solid var(--brand-black);
 }
 
