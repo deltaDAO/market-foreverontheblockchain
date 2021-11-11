@@ -8,7 +8,7 @@ div.filterList {
 }
 
 .separator {
-  width: calc(var(--spacer) / 2);
+  width: var(--spacer);
 }
 
 .filter {
@@ -20,12 +20,10 @@ button.filter,
 .filter:hover,
 .filter:active,
 .filter:focus {
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
   margin-right: calc(var(--spacer) / 6);
-  margin-bottom: calc(var(--spacer) / 6);
   color: var(--color-secondary);
-  background: var(--background-content);
+  font-weight: var(--font-weight-base);
+  text-transform: capitalize;
 
   /* the only thing not possible to overwrite button style="text" with more specifity of selectors, so sledgehammer */
   padding: calc(var(--spacer) / 6) !important;
@@ -39,20 +37,19 @@ button.filter,
 }
 
 .filter.selected {
-  color: var(--background-body);
-  background: var(--font-color-text);
-  border-color: var(--background-body);
+  font-weight: var(--font-weight-semibold);
+  color: var(--font-color-text);
+  border-bottom: 2px solid var(--brand-black);
 }
 
 .filter.selected::after {
-  content: '✕';
+  content: url(../../../images/close_circle_outline.svg);
   margin-left: calc(var(--spacer) / 6);
-  color: var(--background-body);
 }
 
 .showClear:hover {
   display: inline-flex;
-  color: var(--color-primary);
+  color: var(--font-color-text);
 }
 .showClear {
   display: inline-flex;

@@ -6,6 +6,7 @@
 .link {
   composes: box from '../atoms/Box.module.css';
   font-size: var(--font-size-small);
+  font-weight: var(--font-weight-base);
   height: 100%;
   color: var(--color-secondary);
   position: relative;
@@ -15,7 +16,7 @@
 }
 
 .algorithm .link {
-  background-color: var(--background-body);
+  background-color: var(--background-content);
 }
 
 .content {
@@ -54,6 +55,7 @@
 
 .symbol {
   display: block;
+  color: var(--color-secondary);
 }
 
 .typeDetails {

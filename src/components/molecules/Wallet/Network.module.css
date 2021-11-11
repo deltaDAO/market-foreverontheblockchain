@@ -1,9 +1,11 @@
 .network {
   border: 1px solid var(--border-color);
+  border: none;
   border-right: none;
   border-top-left-radius: var(--border-radius);
   border-bottom-left-radius: var(--border-radius);
   padding: calc(var(--spacer) / 6) calc(var(--spacer) / 3);
+  padding-left: 0;
   white-space: nowrap;
   margin-right: -3px;
   display: inline-flex;
@@ -12,13 +14,13 @@
 
 .name {
   font-size: var(--font-size-small);
-  color: var(--brand-grey-dimmed);
+  color: var(--brand-black);
 }
 
 .badge {
   margin-left: calc(var(--spacer) / 8);
-  background-color: var(--brand-grey-dark);
-  color: var(--brand-grey-dimmed);
+  background-color: var(--brand-black);
+  color: var(--brand-white);
 }
 
 .warning {

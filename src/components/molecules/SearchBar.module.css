@@ -1,15 +1,16 @@
 .search {
   display: flex;
   position: relative;
+  border-radius: var(--border-radius);
 }
 
 .button {
-  color: var(--color-secondary);
+  color: var(--color-text);
   cursor: pointer;
-  background: var(--background-content);
+  background: var(--brand-white);
   border: none;
+  border-radius: var(--border-radius);
   box-shadow: none;
-  padding: 0;
   position: absolute;
   padding: calc(var(--spacer) / 4);
   width: 100%;
@@ -27,18 +28,18 @@
 
 .input {
   background-color: transparent;
-  height: 36px;
+  height: 46.34px;
   margin: 0;
   outline: 0;
   padding-right: var(--spacer);
   width: 0;
   transition: none;
+  border-radius: var(--border-radius);
 }
 
 .input:focus {
   width: calc(100% - var(--spacer));
-  background-color: var(--background-content);
-  border-color: var(--brand-grey-lighter);
+  background: var(--brand-white);
   position: fixed;
   left: calc(var(--spacer) / 2);
   right: 0;
@@ -46,7 +47,7 @@
 }
 
 .input::placeholder {
-  color: var(--brand-grey-lighter);
+  color: var(--brand-black);
   opacity: 1;
 }
 
@@ -75,8 +76,9 @@
 }
 
 .searchIcon {
-  fill: currentColor;
+  fill: var(--brand-black);
+  background: transparent;
   transition: 0.2s ease-out;
-  width: var(--font-size-h5);
-  height: var(--font-size-h5);
+  width: var(--font-size-small);
+  height: var(--font-size-small);
 }

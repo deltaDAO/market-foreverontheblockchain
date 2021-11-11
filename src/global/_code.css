@@ -15,8 +15,7 @@ pre {
   display: block;
   margin: calc(var(--spacer) / 2) 0;
   padding: calc(var(--spacer) / 2);
-  background-color: var(--background-highlight) !important;
-  border-radius: var(--border-radius);
+  background-color: var(--brand-white) !important;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   max-height: 800px;

@@ -3,7 +3,7 @@
 div.Toastify__toast {
   font-family: var(--font-family-base);
   font-size: var(--font-size-small);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   border-radius: var(--border-radius);
   box-shadow: 0 6px 15px 0 var(--box-shadow-color);
   padding: calc(var(--spacer) / 2) var(--spacer);

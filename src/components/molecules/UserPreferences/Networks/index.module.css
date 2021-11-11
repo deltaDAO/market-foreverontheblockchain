@@ -1,5 +1,4 @@
 .networks {
-  margin-right: calc(var(--spacer) / 3);
   position: relative;
   overflow: hidden;
 }
@@ -19,4 +18,5 @@
   margin: 0 1px;
   display: inline-block;
   background-color: var(--color-primary);
+  background-color: var(--brand-gold);
 }

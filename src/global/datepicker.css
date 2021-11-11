@@ -23,7 +23,7 @@
 .react-datepicker-year-header,
 .react-datepicker__day-name {
   color: var(--brand-white);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
 }
 
 .react-datepicker__month-container {
@@ -51,14 +51,14 @@
   background-color: var(--color-primary);
   color: var(--brand-white);
   border-radius: 50%;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
 }
 
 .react-datepicker__day:hover,
 .react-datepicker__month-text:hover {
   background-color: var(--color-primary);
   border-radius: 50%;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   color: var(--brand-white);
 }
 

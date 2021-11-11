@@ -1,2 +1,6 @@
 .header {
+  background-color: var(--brand-grey-golden);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }

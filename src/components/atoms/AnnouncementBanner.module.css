@@ -2,7 +2,7 @@
   text-align: center;
   padding: calc(var(--spacer) / 5) calc(var(--spacer) / 2);
   border-bottom: 1px solid var(--border-color);
-  background-color: var(--background-content);
+  background-color: var(--background-body);
 }
 
 .banner.error {
@@ -30,7 +30,7 @@
 
 .text {
   font-size: var(--font-size-small);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   margin: 0;
   margin-right: calc(var(--spacer) / 4);
   text-align: center;

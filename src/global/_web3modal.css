@@ -65,7 +65,7 @@ div.web3modal-provider-wrapper:hover div.web3modal-provider-icon {
 
 div.web3modal-provider-name {
   font-size: var(--font-size-large);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   font-family: var(--font-family-heading);
 }
 
@@ -91,7 +91,7 @@ div.walletconnect-modal__mobile__toggle {
 
 div.walletconnect-modal__mobile__toggle a {
   color: var(--color-secondary);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-small);
   padding: calc(var(--spacer) / 12) var(--spacer);
   white-space: nowrap;

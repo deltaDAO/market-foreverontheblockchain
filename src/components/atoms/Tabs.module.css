@@ -1,37 +1,26 @@
 .tabList {
+  display: flex;
+  justify-content: space-around;
   text-align: center;
-  border-bottom: 1px solid var(--border-color);
-  padding: calc(var(--spacer) / 2);
+  margin: var(--spacer) 0;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+  border-radius: var(--border-radius);
+  margin-top: 0;
 }
 
 .tab {
   display: inline-block;
-  padding: calc(var(--spacer) / 12) var(--spacer);
-  font-weight: var(--font-weight-bold);
+  padding: calc(var(--spacer) / 2) 0;
+  font-weight: var(--font-weight-base);
   font-size: var(--font-size-small);
-  text-transform: uppercase;
   cursor: pointer;
   color: var(--color-secondary);
-  background-color: var(--background-body);
-  border: 1px solid var(--border-color);
-  margin-right: -1px;
-  min-width: 100px;
-}
-
-.tab:first-child {
-  border-top-left-radius: var(--border-radius);
-  border-bottom-left-radius: var(--border-radius);
-}
-
-.tab:last-child {
-  border-top-right-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
 }
 
 .tab[aria-selected='true'] {
-  background-color: var(--font-color-heading);
-  color: var(--background-body);
-  border-color: var(--font-color-heading);
+  font-weight: var(--font-weight-semibold);
+  color: var(--font-color-text);
+  border-bottom: 2px solid var(--brand-black);
 }
 
 .tabContent {

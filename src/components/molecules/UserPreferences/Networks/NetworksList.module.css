@@ -9,4 +9,5 @@
   composes: box from '../../../atoms/Box.module.css';
   box-shadow: none;
   padding: 0;
+  background: var(--brand-white);
 }
