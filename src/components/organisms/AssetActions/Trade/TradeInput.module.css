@@ -3,7 +3,6 @@
   padding: var(--spacer) calc(var(--spacer) * 2);
   margin-left: -2rem;
   margin-right: -2rem;
-  /* background: var(--background-content); */
 }
 
 .tradeInput input {

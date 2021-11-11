@@ -59,9 +59,7 @@
   --font-weight-light: 300;
   --font-weight-base: 400;
   --font-weight-semibold: 500;
-  --font-weight-bold: 600;
-  --font-weight-heavy: 700;
-  --line-height: 1.6;
+  --line-height: 1.8;
 
   --spacer: 2rem;
   --border-radius: 3.6rem;
@@ -73,15 +71,4 @@
   --break-point--medium: 860px;
   --break-point--large: 1140px;
   --break-point--huge: 1400px;
-}
-
-.dark {
-  --font-color-text: var(--brand-grey-lighter);
-  --font-color-heading: var(--brand-grey-dimmed);
-  --background-content: var(--brand-black);
-  --background-body: var(--brand-black);
-  --background-body-transparent: rgba(20, 20, 20, 0.9);
-  --background-highlight: var(--brand-grey-darker);
-  --border-color: var(--brand-grey-dark);
-  --box-shadow-color: rgba(0, 0, 0, 0.2);
 }

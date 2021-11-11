@@ -125,7 +125,7 @@
 .actions div[class*='tooltip'],
 .actions div[class*='network'] {
   border-color: var(--brand-black);
-  background: var(--brand-white);
+  background: transparent;
 }
 
 .actions svg {

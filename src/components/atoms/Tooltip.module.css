@@ -23,7 +23,6 @@
   display: inline-block;
   margin-bottom: -0.1em;
   margin-left: calc(var(--spacer) / 6);
-  /* fill: var(--brand-black); */
 }
 
 .arrow,
@@ -37,7 +36,6 @@
 .arrow::before {
   content: '';
   transform: rotate(45deg);
-  /* background: var(--brand-black); */
   border: 2px solid var(--brand-black);
 }
 

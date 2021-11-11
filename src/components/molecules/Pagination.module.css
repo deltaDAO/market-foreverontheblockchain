@@ -11,10 +11,8 @@
 }
 
 .number {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   padding: calc(var(--spacer) / 2);
-  /* margin-left: -1px;
-  margin-top: -1px; */
   display: block;
   cursor: pointer;
   min-width: 3rem;
@@ -24,17 +22,6 @@
   justify-content: center;
   color: var(--color-secondary);
 }
-
-/* li:first-child .number,
-:global(li.selected):nth-child(2) .number {
-  border-top-left-radius: var(--border-radius);
-  border-bottom-left-radius: var(--border-radius);
-}
-
-li:last-child .number {
-  border-top-right-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-} */
 
 .number,
 .number:hover,

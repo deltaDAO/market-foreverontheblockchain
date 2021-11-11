@@ -21,16 +21,10 @@
   color: var(--brand-black);
 }
 
-.button:hover .address {
-  /* color: var(--brand-white);
-  background: var(--brand-black); */
-}
-
 .button:hover,
 .button:focus {
   transform: none;
   outline: 0;
-  /* background: var(--brand-black); */
 }
 
 .button.initial {

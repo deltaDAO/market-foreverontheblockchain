@@ -37,7 +37,7 @@ button.filter,
 }
 
 .filter.selected {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   color: var(--font-color-text);
   border-bottom: 2px solid var(--brand-black);
 }

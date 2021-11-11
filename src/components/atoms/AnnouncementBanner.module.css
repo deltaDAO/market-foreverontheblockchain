@@ -30,7 +30,7 @@
 
 .text {
   font-size: var(--font-size-small);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   margin: 0;
   margin-right: calc(var(--spacer) / 4);
   text-align: center;
