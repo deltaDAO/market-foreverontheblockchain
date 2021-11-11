@@ -3,8 +3,7 @@
 
   padding: calc(var(--spacer) / 2);
   border: 1px solid var(--border-color);
-  background-color: var(--background-highlight);
-  border-radius: var(--border-radius);
+  background-color: var(--brand-white);
   margin-bottom: calc(var(--spacer) / 2);
   font-size: var(--font-size-small);
 
