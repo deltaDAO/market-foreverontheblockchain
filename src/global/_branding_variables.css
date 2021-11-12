@@ -22,7 +22,3 @@
     #00ffff 110%
   );
 }
-
-.dark {
-  --background-body-transparent: rgba(00, 00, 00, 0.9);
-}
