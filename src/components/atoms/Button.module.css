@@ -33,7 +33,6 @@
   color: var(--brand-white);
   background: var(--brand-grey-light);
   text-decoration: none;
-  transform: translate3d(0, -0.05rem, 0);
   box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
