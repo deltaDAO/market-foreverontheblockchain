@@ -6,6 +6,7 @@ import Currency from './Currency'
 import Debug from './Debug'
 import { ReactComponent as AddCircle } from '../../../images/add_circle_outline.svg'
 import TokenApproval from './TokenApproval'
+import { allowDynamicPricing } from '../../../../app.config'
 
 export default function UserPreferences(): ReactElement {
   return (
@@ -13,7 +14,7 @@ export default function UserPreferences(): ReactElement {
       content={
         <ul className={styles.preferencesDetails}>
           <Currency />
-          <TokenApproval />
+          {allowDynamicPricing === 'true' ? <TokenApproval /> : null}
           <Debug />
         </ul>
       }
