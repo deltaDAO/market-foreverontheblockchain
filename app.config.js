@@ -10,10 +10,10 @@ module.exports = {
 
   // List of chainIds which metadata cache queries will return by default.
   // This preselects the Chains user preferences.
-  chainIds: [3, 4],
+  chainIds: [2021000],
 
   // List of all supported chainIds. Used to populate the Chains user preferences list.
-  chainIdsSupported: [3, 4, 2021000, 2021001],
+  chainIdsSupported: [2021000],
 
   rbacUrl: process.env.GATSBY_RBAC_URL,
 
@@ -55,7 +55,7 @@ module.exports = {
   // Used to show or hide the fixed, dynamic or free price options
   // tab to publishers during the price creation.
   allowFixedPricing: process.env.GATSBY_ALLOW_FIXED_PRICING || 'true',
-  allowDynamicPricing: process.env.GATSBY_ALLOW_DYNAMIC_PRICING || 'true',
+  allowDynamicPricing: process.env.GATSBY_ALLOW_DYNAMIC_PRICING || 'false',
   allowFreePricing: process.env.GATSBY_ALLOW_FREE_PRICING || 'false',
 
   // Used to show or hide advanced settings button in asset details page
