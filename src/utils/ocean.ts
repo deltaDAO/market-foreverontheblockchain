@@ -4,6 +4,9 @@ import { AbiItem } from 'web3-utils/types'
 import Web3 from 'web3'
 import chains from '../../chains.config'
 
+type ConfigHelperConfigOverwrite = Partial<ConfigHelperConfig> &
+  Required<Pick<ConfigHelperConfig, 'networkId'>>
+
 export function getOceanConfig(network: string | number): ConfigHelperConfig {
   const config = new ConfigHelper().getConfig(
     network,
@@ -19,9 +22,9 @@ export function getOceanConfig(network: string | number): ConfigHelperConfig {
       : process.env.GATSBY_INFURA_PROJECT_ID
   ) as ConfigHelperConfig
 
-  const configOverwrite = chains.find(
-    (chain) => chain.networkId === config.networkId
-  )
+  const configOverwrite = Object.entries(
+    chains as { [name: string]: ConfigHelperConfigOverwrite }
+  ).find(([alias, chainConfig]) => chainConfig.networkId === config.networkId)
 
   return configOverwrite
     ? {
