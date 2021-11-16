@@ -2,9 +2,10 @@ const chains = require('./chains.config')
 const findChainIds = (network) => {
   const defaultChainIds = []
   const supportedChainIds = []
-  for (const [key, value] of Object.entries(network)) {
-    const { isSupported, isDefault, networkId } = value
-    if (isSupported) supportedChainIds.push(networkId)
+  for (const [, value] of Object.entries(network)) {
+    const { isDefault, networkId } = value
+    supportedChainIds.push(networkId)
+
     if (isDefault) defaultChainIds.push(networkId)
   }
   return { defaultChainIds, supportedChainIds }

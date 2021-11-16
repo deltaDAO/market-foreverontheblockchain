@@ -3,9 +3,7 @@ import contractAddresses from '@oceanprotocol/contracts/artifacts/address.json'
 import { AbiItem } from 'web3-utils/types'
 import Web3 from 'web3'
 import chains from '../../chains.config'
-
-type ConfigHelperConfigOverwrite = Partial<ConfigHelperConfig> &
-  Required<Pick<ConfigHelperConfig, 'networkId'>>
+import { ConfigHelperConfigOverwrite } from '../@types/Chains'
 
 export function getOceanConfig(network: string | number): ConfigHelperConfig {
   const config = new ConfigHelper().getConfig(
@@ -24,7 +22,7 @@ export function getOceanConfig(network: string | number): ConfigHelperConfig {
 
   const configOverwrite = Object.entries(
     chains as { [name: string]: ConfigHelperConfigOverwrite }
-  ).find(([alias, chainConfig]) => chainConfig.networkId === config.networkId)
+  ).find(([, chainConfig]) => chainConfig.networkId === config.networkId)
 
   return configOverwrite
     ? {
