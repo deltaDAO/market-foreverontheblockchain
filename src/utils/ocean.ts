@@ -22,7 +22,7 @@ export function getOceanConfig(network: string | number): ConfigHelperConfig {
 
   const configOverwrite = Object.entries(
     chains as { [name: string]: ConfigHelperConfigOverwrite }
-  ).find(([, chainConfig]) => chainConfig.networkId === config.networkId)
+  ).find(([alias, chainConfig]) => chainConfig.networkId === config.networkId)
 
   return configOverwrite
     ? {
