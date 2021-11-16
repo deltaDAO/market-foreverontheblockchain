@@ -10,8 +10,7 @@ div.web3modal-modal-card {
   padding: var(--spacer);
   margin: var(--spacer) auto;
   max-width: 100%;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%),
-    0 10px 10px -5px rgb(0 0 0 / 4%);
+  box-shadow: var(--box-shadow);
   animation: moveUp 0.2s ease-out backwards;
   grid-template-columns: 1fr;
 }
