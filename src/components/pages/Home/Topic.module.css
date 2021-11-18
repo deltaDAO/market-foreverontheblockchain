@@ -1,5 +1,6 @@
 .container {
   margin: calc(var(--spacer) * 6) 0;
+  margin: var(--spacer) 0;
 }
 
 @media screen and (min-width: 50rem) {
@@ -7,7 +8,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: right;
   }
 
   .container.mirror {
@@ -31,7 +31,7 @@
 
 .content h3 {
   text-transform: lowercase;
-  font-size: var(--font-size-h1);
+  font-weight: bold;
 }
 
 .content button,
@@ -39,4 +39,11 @@
   display: block;
   margin: var(--spacer) auto;
   margin-right: auto;
+}
+
+.index {
+  margin-bottom: calc(var(--spacer) / 2);
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  color: var(--brand-gold);
 }

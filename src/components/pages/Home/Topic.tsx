@@ -19,11 +19,13 @@ export type TTopic = {
 export default function Topic({
   svgComponent,
   topic,
-  mirror
+  mirror,
+  index
 }: {
   svgComponent: ReactElement
   topic: TTopic
   mirror?: boolean
+  index: number
 }): ReactElement {
   const containerClasses = cx({ container: true, mirror: mirror })
 
@@ -31,6 +33,9 @@ export default function Topic({
     <div className={containerClasses}>
       <div className={styles.svg}>{svgComponent}</div>
       <div className={styles.content}>
+        <div className={styles.index}>
+          <span> {index < 10 ? '0' + index : '' + index} </span>
+        </div>
         <h3>{topic.title}</h3>
         <Markdown text={topic.content} />
         {topic.cta && (

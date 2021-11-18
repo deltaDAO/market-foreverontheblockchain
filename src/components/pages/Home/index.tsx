@@ -13,7 +13,6 @@ import { SortOptions, SortTermOptions } from '../../../models/SortAndFilters'
 import { BaseQueryParams } from '../../../models/aquarius/BaseQueryParams'
 import { PagedAssets } from '../../../models/PagedAssets'
 import Header from './Header'
-import Boxes from './Boxes'
 import Topic, { TTopic } from './Topic'
 import { graphql, useStaticQuery } from 'gatsby'
 import { ReactComponent as Education } from '../../../images/education.svg'
@@ -27,10 +26,6 @@ const topicQuery = graphql`
           svg
           title
           content
-          cta {
-            call
-            action
-          }
         }
       }
     }
@@ -135,13 +130,13 @@ export default function HomePage(): ReactElement {
   return (
     <>
       <Header />
-      <Boxes />
       {(topics as TTopic[]).map((topic, i) => (
         <Topic
           key={topic.title}
           svgComponent={topicSvgMap[topic.svg]}
           topic={topic}
           mirror={i % 2 === 1}
+          index={i + 1}
         />
       ))}
       <Permission eventType="browse">
