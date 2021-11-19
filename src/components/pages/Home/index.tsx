@@ -16,11 +16,11 @@ import Header from './Header'
 import Topic, { TTopic } from './Topic'
 import { graphql, useStaticQuery } from 'gatsby'
 import LottieVisualizer from '../../atoms/LottieVisualizer'
-import CentralizedCTD from '../../../images/explainer_centralized_01.json'
-import CentralizedPrivacy from '../../../images/explainer_centralized_02.json'
-import DecentralizedCTD from '../../../images/explainer_decentralized_01.json'
-import DecentralizedPrivacy from '../../../images/explainer_decentralized_02.json'
-import DecentralizedAbout from '../../../images/explainer_decentralized_04.json'
+import CentralizedCTD from '../../../images/animations/CentralizedCTD'
+import CentralizedPrivacy from '../../../images/animations/CentralizedPrivacy'
+import DecentralizedCTD from '../../../images/animations/DecentralizedCTD'
+import DecentralizedPrivacy from '../../../images/animations/DecentralizedPrivacy'
+import DecentralizedAbout from '../../../images/animations/DecentralizedAbout'
 
 const topicQuery = graphql`
   query TopicQuery {
