@@ -9,26 +9,22 @@ import { useLocation } from '@reach/router'
 import styles from './index.module.css'
 import OceanProvider from '../../../../providers/Ocean'
 import { useWeb3 } from '../../../../providers/Web3'
+import { useAddressConfig } from '../../../../hooks/useAddressConfig'
+import { useSiteMetadata } from '../../../../hooks/useSiteMetadata'
+import { allowDynamicPricing } from '../../../../../app.config'
 
 interface HistoryTab {
   title: string
   content: JSX.Element
 }
 
-function getTabs(accountId: string, userAccountId: string): HistoryTab[] {
+function getTabs(
+  accountId: string,
+  userAccountId: string,
+  isAddressWhiteListed: boolean,
+  allowDynamicPricing: string
+): HistoryTab[] {
   const defaultTabs: HistoryTab[] = [
-    {
-      title: 'Published',
-      content: <PublishedList accountId={accountId} />
-    },
-    {
-      title: 'Pool Shares',
-      content: <PoolShares accountId={accountId} />
-    },
-    {
-      title: 'Pool Transactions',
-      content: <PoolTransactions accountId={accountId} />
-    },
     {
       title: 'Downloads',
       content: <Downloads accountId={accountId} />
@@ -42,8 +38,26 @@ function getTabs(accountId: string, userAccountId: string): HistoryTab[] {
       </OceanProvider>
     )
   }
+  if (allowDynamicPricing === 'true') {
+    defaultTabs.push(
+      {
+        title: 'Pool Shares',
+        content: <PoolShares accountId={accountId} />
+      },
+      {
+        title: 'Pool Transactions',
+        content: <PoolTransactions accountId={accountId} />
+      }
+    )
+  }
   if (accountId === userAccountId) {
     defaultTabs.push(computeTab)
+  }
+  if (isAddressWhiteListed) {
+    defaultTabs.unshift({
+      title: 'Published',
+      content: <PublishedList accountId={accountId} />
+    })
   }
   return defaultTabs
 }
@@ -53,12 +67,20 @@ export default function HistoryPage({
 }: {
   accountIdentifier: string
 }): ReactElement {
+  const { appConfig } = useSiteMetadata()
   const { accountId } = useWeb3()
   const location = useLocation()
+  const isAddressWhiteListed =
+    useAddressConfig().isAddressWhitelisted(accountId)
 
   const url = new URL(location.href)
   const defaultTab = url.searchParams.get('defaultTab')
-  const tabs = getTabs(accountIdentifier, accountId)
+  const tabs = getTabs(
+    accountIdentifier,
+    accountId,
+    isAddressWhiteListed,
+    appConfig.allowDynamicPricing
+  )
 
   let defaultTabIndex = 0
   defaultTab === 'ComputeJobs' ? (defaultTabIndex = 4) : (defaultTabIndex = 0)

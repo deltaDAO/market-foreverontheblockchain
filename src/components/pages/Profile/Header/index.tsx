@@ -5,6 +5,7 @@ import Stats from './Stats'
 import Account from './Account'
 import styles from './index.module.css'
 import { useProfile } from '../../../../providers/Profile'
+import { useSiteMetadata } from '../../../../hooks/useSiteMetadata'
 
 const isDescriptionTextClamped = () => {
   const el = document.getElementById('description')
@@ -24,6 +25,7 @@ export default function AccountHeader({
 }: {
   accountId: string
 }): ReactElement {
+  const { appConfig } = useSiteMetadata()
   const { profile } = useProfile()
   const [isShowMore, setIsShowMore] = useState(false)
 
@@ -35,7 +37,9 @@ export default function AccountHeader({
     <div className={styles.grid}>
       <div>
         <Account accountId={accountId} />
-        <Stats accountId={accountId} />
+        {appConfig?.allowDynamicPricing === 'true' && (
+          <Stats accountId={accountId} />
+        )}
       </div>
 
       <div>
