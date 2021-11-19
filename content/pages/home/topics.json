@@ -1,17 +1,17 @@
 {
   "topics": [
     {
-      "svg": "data_economy",
+      "svg": "compute_to_data",
       "title": "Compute-to-Data",
       "content": "Compute-to-Data, powered by Ocean Protocol, enables privacy-preserving data monetization for anyone. A trusted algorithm is brought to the data and is executed on-premise while the data always stays with us. We keep full ownership and control while you are invited to obtain valuable insights from our customer base. Ocean Protocol solves the trade-off between monetizing private data and the risk of exposing it while being fully decentralized and self-sovereign."
     },
     {
-      "svg": "education",
+      "svg": "privacy",
       "title": "Privacy",
       "content": "Access to the data is restricted to trusted algorithms to ensure that results are sufficiently aggregated or anonymized and private and sensitive data is not revealed. Try our business analytics demonstrator algorithm to get an impression of Compute-to-Data for privacy-preserving data monetization of private data. More information about Compute-to-Data and its privacy implications can be found [here](https://www.foreverontheblockchain.com/)."
     },
     {
-      "svg": "education",
+      "svg": "about",
       "title": "About foreverontheblockchain",
       "content": "[foreverontheblockchain](https://www.foreverontheblockchain.com/) focuses on the jewelry and fashion industry and connects the analog and digital world. They frame abstract topics like proof of existence and immutability with new products like eternal messages using Bitcoin and NFT jewelry utilizing smart contracts. Customers are mainly searching for novelty and a new kind of experience to tap into the Metaverse."
     }

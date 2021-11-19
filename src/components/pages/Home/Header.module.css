@@ -3,9 +3,9 @@
 }
 
 .tagLine {
-  font-weight: bold;
   margin-top: var(--spacer);
   margin-bottom: var(--spacer);
+  font-weight: bold;
   text-align: center;
 }
 
