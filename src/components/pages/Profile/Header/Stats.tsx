@@ -13,7 +13,7 @@ import NumberUnit from '../../../molecules/NumberUnit'
 import styles from './Stats.module.css'
 import { useProfile } from '../../../../providers/Profile'
 import { PoolShares_poolShares as PoolShare } from '../../../../@types/apollo/PoolShares'
-import { useSiteMetadata } from '../../../../hooks/useSiteMetadata'
+import { allowDynamicPricing } from '../../../../../app.config'
 
 async function getPoolSharesLiquidity(
   poolShares: PoolShare[]
@@ -33,7 +33,6 @@ export default function Stats({
 }: {
   accountId: string
 }): ReactElement {
-  const { appConfig } = useSiteMetadata()
   const { chainIds } = useUserPreferences()
   const { poolShares, assets, assetsTotal, sales } = useProfile()
 
@@ -88,7 +87,7 @@ export default function Stats({
 
   return (
     <div className={styles.stats}>
-      {appConfig?.allowDynamicPricing === 'true' && (
+      {allowDynamicPricing === 'true' && (
         <>
           <NumberUnit
             label="Liquidity in Own Assets"

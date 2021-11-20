@@ -14,7 +14,7 @@ export default function UserPreferences(): ReactElement {
       content={
         <ul className={styles.preferencesDetails}>
           <Currency />
-          {allowDynamicPricing === 'true' ? <TokenApproval /> : null}
+          {allowDynamicPricing === 'true' && <TokenApproval />}
           <Debug />
         </ul>
       }
