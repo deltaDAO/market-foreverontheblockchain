@@ -10,7 +10,7 @@ import styles from './index.module.css'
 import OceanProvider from '../../../../providers/Ocean'
 import { useWeb3 } from '../../../../providers/Web3'
 import { useAddressConfig } from '../../../../hooks/useAddressConfig'
-import { useSiteMetadata } from '../../../../hooks/useSiteMetadata'
+import { allowDynamicPricing } from '../../../../../app.config'
 
 interface HistoryTab {
   title: string
@@ -66,7 +66,6 @@ export default function HistoryPage({
 }: {
   accountIdentifier: string
 }): ReactElement {
-  const { appConfig } = useSiteMetadata()
   const { accountId } = useWeb3()
   const location = useLocation()
   const isAddressWhiteListed =
@@ -78,7 +77,7 @@ export default function HistoryPage({
     accountIdentifier,
     accountId,
     isAddressWhiteListed,
-    appConfig.allowDynamicPricing
+    allowDynamicPricing
   )
 
   let defaultTabIndex = 0
