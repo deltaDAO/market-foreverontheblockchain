@@ -2,7 +2,7 @@ import React from 'react'
 import Lottie from 'react-lottie-player'
 import styles from './LottieVisualizer.module.css'
 
-export default function Example({
+export default function LottieVisualizer({
   source
 }: {
   source: Record<string, unknown>

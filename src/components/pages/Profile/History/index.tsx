@@ -11,7 +11,6 @@ import OceanProvider from '../../../../providers/Ocean'
 import { useWeb3 } from '../../../../providers/Web3'
 import { useAddressConfig } from '../../../../hooks/useAddressConfig'
 import { useSiteMetadata } from '../../../../hooks/useSiteMetadata'
-import { allowDynamicPricing } from '../../../../../app.config'
 
 interface HistoryTab {
   title: string
