@@ -4,15 +4,15 @@
 // all other fields are first loaded from ocean.js and are optional
 // import { ConfigHelperConfig } from '@oceanprotocol/lib'
 
-const chains = {
-  GaiaXTestnet: {
+const chains = [
+  {
     networkId: 2021000,
     nodeUri: 'https://rpc.gaiaxtestnet.oceanprotocol.com/',
     providerUri: 'https://provider.gaiax.delta-dao.com/',
     explorerUri: 'https://blockscout.gaiaxtestnet.oceanprotocol.com/',
     isDefault: true
   }
-}
+]
 
 const getDefaultChainIds = () => {
   return chains.filter((chain) => chain.isDefault).map((c) => c.networkId)
