@@ -6,9 +6,11 @@ import Currency from './Currency'
 import Debug from './Debug'
 import { ReactComponent as AddCircle } from '../../../images/add_circle_outline.svg'
 import TokenApproval from './TokenApproval'
-import { allowDynamicPricing } from '../../../../app.config'
+import { useSiteMetadata } from '../../../hooks/useSiteMetadata'
 
 export default function UserPreferences(): ReactElement {
+  const { allowDynamicPricing } = useSiteMetadata().appConfig
+
   return (
     <Tooltip
       content={

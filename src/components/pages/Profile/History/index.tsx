@@ -10,7 +10,7 @@ import styles from './index.module.css'
 import OceanProvider from '../../../../providers/Ocean'
 import { useWeb3 } from '../../../../providers/Web3'
 import { useAddressConfig } from '../../../../hooks/useAddressConfig'
-import { allowDynamicPricing } from '../../../../../app.config'
+import { useSiteMetadata } from '../../../../hooks/useSiteMetadata'
 
 interface HistoryTab {
   title: string
@@ -37,26 +37,29 @@ function getTabs(
       </OceanProvider>
     )
   }
+  const poolTabs: HistoryTab[] = [
+    {
+      title: 'Pool Shares',
+      content: <PoolShares accountId={accountId} />
+    },
+    {
+      title: 'Pool Transactions',
+      content: <PoolTransactions accountId={accountId} />
+    }
+  ]
+  const publishedTab: HistoryTab = {
+    title: 'Published',
+    content: <PublishedList accountId={accountId} />
+  }
+
   if (allowDynamicPricing === 'true') {
-    defaultTabs.push(
-      {
-        title: 'Pool Shares',
-        content: <PoolShares accountId={accountId} />
-      },
-      {
-        title: 'Pool Transactions',
-        content: <PoolTransactions accountId={accountId} />
-      }
-    )
+    defaultTabs.push(...poolTabs)
   }
   if (accountId === userAccountId) {
     defaultTabs.push(computeTab)
   }
   if (isAddressWhiteListed) {
-    defaultTabs.unshift({
-      title: 'Published',
-      content: <PublishedList accountId={accountId} />
-    })
+    defaultTabs.unshift(publishedTab)
   }
   return defaultTabs
 }
@@ -66,6 +69,7 @@ export default function HistoryPage({
 }: {
   accountIdentifier: string
 }): ReactElement {
+  const { allowDynamicPricing } = useSiteMetadata().appConfig
   const { accountId } = useWeb3()
   const location = useLocation()
   const isAddressWhiteListed =
