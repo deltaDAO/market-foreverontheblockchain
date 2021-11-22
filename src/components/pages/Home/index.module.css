@@ -10,6 +10,7 @@
 
 .section h3 {
   color: var(--font-color-heading);
+  font-weight: bold;
 }
 
 .section [class*='button'] {
