@@ -20,7 +20,7 @@ import CentralizedCTD from '../../../images/animations/CentralizedCTD'
 import CentralizedPrivacy from '../../../images/animations/CentralizedPrivacy'
 import DecentralizedCTD from '../../../images/animations/DecentralizedCTD'
 import DecentralizedPrivacy from '../../../images/animations/DecentralizedPrivacy'
-import DecentralizedAbout from '../../../images/animations/DecentralizedAbout'
+import Img from 'gatsby-image'
 
 const topicQuery = graphql`
   query TopicQuery {
@@ -33,24 +33,15 @@ const topicQuery = graphql`
         }
       }
     }
+    about: file(relativePath: { eq: "animations/about.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
-
-const topicSvgMap = {
-  compute_to_data: (
-    <>
-      <LottieVisualizer source={DecentralizedCTD} />
-      <LottieVisualizer source={CentralizedCTD} />
-    </>
-  ),
-  privacy: (
-    <>
-      <LottieVisualizer source={DecentralizedPrivacy} />
-      <LottieVisualizer source={CentralizedPrivacy} />
-    </>
-  ),
-  about: <LottieVisualizer source={DecentralizedAbout} />
-}
 
 function sortElements(items: DDO[], sorted: string[]) {
   items.sort(function (a, b) {
@@ -129,6 +120,27 @@ export default function HomePage(): ReactElement {
 
   const data = useStaticQuery(topicQuery)
   const { topics } = data.file.childHomeJson
+
+  const topicSvgMap = {
+    compute_to_data: (
+      <>
+        <LottieVisualizer source={DecentralizedCTD} />
+        <LottieVisualizer source={CentralizedCTD} />
+      </>
+    ),
+    privacy: (
+      <>
+        <LottieVisualizer source={DecentralizedPrivacy} />
+        <LottieVisualizer source={CentralizedPrivacy} />
+      </>
+    ),
+    about: (
+      <Img
+        fluid={data.about.childImageSharp.fluid}
+        alt="decentralized about section"
+      />
+    )
+  }
 
   useEffect(() => {
     const baseParams = {
