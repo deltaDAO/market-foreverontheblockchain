@@ -2,7 +2,7 @@
   display: inline-block;
   font-size: var(--font-size-mini);
   font-family: var(--font-family-base);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   line-height: 1 !important;
   text-transform: uppercase;
   padding: 0.2rem;

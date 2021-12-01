@@ -1,18 +1,26 @@
 .container {
-  margin: calc(var(--spacer) * 6) 0;
+  margin: calc(var(--spacer) * 2);
 }
 
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 60rem) {
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: right;
   }
 
   .container.mirror {
     flex-direction: row-reverse;
     text-align: left;
+  }
+
+  .content {
+    margin-left: calc(var(--spacer) * 2);
+  }
+
+  .container.mirror .content {
+    margin-left: 0;
+    margin-right: calc(var(--spacer) * 2);
   }
 }
 
@@ -21,8 +29,8 @@
 }
 
 .svg {
-  max-width: 30rem;
   margin: auto;
+  max-width: 400px;
 }
 
 .content {
@@ -31,7 +39,7 @@
 
 .content h3 {
   text-transform: lowercase;
-  font-size: var(--font-size-h1);
+  font-weight: bold;
 }
 
 .content button,
@@ -39,4 +47,11 @@
   display: block;
   margin: var(--spacer) auto;
   margin-right: auto;
+}
+
+.index {
+  margin-bottom: calc(var(--spacer) / 2);
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  color: var(--brand-gold);
 }

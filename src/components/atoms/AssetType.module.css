@@ -5,6 +5,7 @@
   vertical-align: baseline;
   margin-bottom: -0.1em;
   display: inline-block;
+  color: var(--color-secondary);
 }
 
 .typeLabel {
@@ -13,4 +14,5 @@
   border-left: 1px solid var(--border-color);
   padding-left: calc(var(--spacer) / 3.5);
   margin-left: calc(var(--spacer) / 4);
+  color: var(--color-secondary);
 }

@@ -17,7 +17,7 @@
 
 .radioLabel {
   composes: radioLabel from '../../../atoms/Input/InputElement.module.css';
-  font-weight: var(--font-weight-base);
+  font-weight: var(--font-weight-light);
   display: flex;
   align-items: center;
   margin: 0;
@@ -27,5 +27,5 @@
 
 .input:checked + span {
   color: var(--font-color-text);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
 }

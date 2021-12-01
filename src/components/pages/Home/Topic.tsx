@@ -7,7 +7,7 @@ import styles from './Topic.module.css'
 const cx = classNames.bind(styles)
 
 export type TTopic = {
-  svg: 'education' | 'data_economy'
+  svg: 'compute_to_data' | 'privacy' | 'about'
   title: string
   content: string
   cta?: {
@@ -17,10 +17,12 @@ export type TTopic = {
 }
 
 export default function Topic({
+  index,
   svgComponent,
   topic,
   mirror
 }: {
+  index: number
   svgComponent: ReactElement
   topic: TTopic
   mirror?: boolean
@@ -31,6 +33,9 @@ export default function Topic({
     <div className={containerClasses}>
       <div className={styles.svg}>{svgComponent}</div>
       <div className={styles.content}>
+        <div className={styles.index}>
+          <span> {index < 10 ? '0' + index : '' + index} </span>
+        </div>
         <h3>{topic.title}</h3>
         <Markdown text={topic.content} />
         {topic.cta && (

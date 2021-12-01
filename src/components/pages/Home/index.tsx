@@ -13,11 +13,14 @@ import { SortOptions, SortTermOptions } from '../../../models/SortAndFilters'
 import { BaseQueryParams } from '../../../models/aquarius/BaseQueryParams'
 import { PagedAssets } from '../../../models/PagedAssets'
 import Header from './Header'
-import Boxes from './Boxes'
 import Topic, { TTopic } from './Topic'
 import { graphql, useStaticQuery } from 'gatsby'
-import { ReactComponent as Education } from '../../../images/education.svg'
-import { ReactComponent as DataEconomy } from '../../../images/data_economy.svg'
+import LottieVisualizer from '../../atoms/LottieVisualizer'
+import CentralizedCTD from '../../../images/animations/CentralizedCTD'
+import CentralizedPrivacy from '../../../images/animations/CentralizedPrivacy'
+import DecentralizedCTD from '../../../images/animations/DecentralizedCTD'
+import DecentralizedPrivacy from '../../../images/animations/DecentralizedPrivacy'
+import Img from 'gatsby-image'
 
 const topicQuery = graphql`
   query TopicQuery {
@@ -27,20 +30,18 @@ const topicQuery = graphql`
           svg
           title
           content
-          cta {
-            call
-            action
-          }
+        }
+      }
+    }
+    about: file(relativePath: { eq: "animations/about.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }
   }
 `
-
-const topicSvgMap = {
-  education: <Education />,
-  data_economy: <DataEconomy />
-}
 
 function sortElements(items: DDO[], sorted: string[]) {
   items.sort(function (a, b) {
@@ -120,6 +121,27 @@ export default function HomePage(): ReactElement {
   const data = useStaticQuery(topicQuery)
   const { topics } = data.file.childHomeJson
 
+  const topicSvgMap = {
+    compute_to_data: (
+      <>
+        <LottieVisualizer source={DecentralizedCTD} />
+        <LottieVisualizer source={CentralizedCTD} />
+      </>
+    ),
+    privacy: (
+      <>
+        <LottieVisualizer source={DecentralizedPrivacy} />
+        <LottieVisualizer source={CentralizedPrivacy} />
+      </>
+    ),
+    about: (
+      <Img
+        fluid={data.about.childImageSharp.fluid}
+        alt="decentralized about section"
+      />
+    )
+  }
+
   useEffect(() => {
     const baseParams = {
       chainIds: chainIds,
@@ -135,13 +157,13 @@ export default function HomePage(): ReactElement {
   return (
     <>
       <Header />
-      <Boxes />
       {(topics as TTopic[]).map((topic, i) => (
         <Topic
           key={topic.title}
           svgComponent={topicSvgMap[topic.svg]}
           topic={topic}
           mirror={i % 2 === 1}
+          index={i + 1}
         />
       ))}
       <Permission eventType="browse">

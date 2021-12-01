@@ -1,10 +1,11 @@
 import React, { FormEvent } from 'react'
-import { ReactComponent as Caret } from '../../../images/caret.svg'
+import { ReactComponent as AddCircle } from '../../../images/add_circle_outline.svg'
 import { accountTruncate } from '../../../utils/web3'
 import Loader from '../../atoms/Loader'
 import styles from './Account.module.css'
 import { useWeb3 } from '../../../providers/Web3'
 import Blockies from '../../atoms/Blockies'
+import Network from './Network'
 
 // Forward ref for Tippy.js
 // eslint-disable-next-line
@@ -30,11 +31,12 @@ const Account = React.forwardRef((props, ref: any) => {
       ref={ref}
       onClick={(e) => e.preventDefault()}
     >
+      <Network />
       <Blockies accountId={accountId} />
       <span className={styles.address} title={accountId}>
         {accountTruncate(accountEns || accountId)}
       </span>
-      <Caret aria-hidden="true" className={styles.caret} />
+      <AddCircle aria-hidden="true" className={styles.caret} />
     </button>
   ) : (
     <button

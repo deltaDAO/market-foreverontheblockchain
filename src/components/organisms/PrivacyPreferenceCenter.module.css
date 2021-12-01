@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: var(--background-body-transparent);
-  backdrop-filter: blur(4px);
+  background: var(--brand-white);
+  box-shadow: var(--box-shadow);
   padding: calc(var(--spacer) / 2);
   min-height: 100vh;
 }

@@ -47,7 +47,7 @@ const web3ModalTheme = {
   main: 'var(--font-color-heading)',
   secondary: 'var(--brand-grey-light)',
   border: 'var(--border-color)',
-  hover: 'var(--background-highlight)'
+  hover: 'var(--brand-grey-golden)'
 }
 
 // HEADS UP! We inline-require some packages so the Gatsby SSR build does not break.

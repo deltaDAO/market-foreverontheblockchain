@@ -5,11 +5,14 @@
   justify-content: space-between;
   width: 100%;
   white-space: nowrap;
-  margin-bottom: calc(var(--spacer) / 2);
+  margin: var(--spacer) 0;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+  border-radius: var(--border-radius);
+  padding: 0 calc(var(--spacer) / 2);
 }
 
 .row > div {
-  margin-bottom: calc(var(--spacer) / 2);
+  margin: calc(var(--spacer) / 2);
 }
 
 @media (min-width: 40rem) {

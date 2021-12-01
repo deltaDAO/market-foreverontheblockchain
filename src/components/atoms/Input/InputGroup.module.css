@@ -14,7 +14,6 @@
 .inputGroup button:focus,
 .inputGroup input:focus + button:hover,
 .inputGroup input:focus + button:focus {
-  background: var(--brand-gradient);
   transform: none;
   box-shadow: none;
 }
@@ -29,7 +28,6 @@
   }
 
   .inputGroup input {
-    border-bottom-left-radius: var(--border-radius);
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }

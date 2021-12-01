@@ -1,9 +1,9 @@
 :root {
-  --brand-pink: #00ffff;
+  --brand-pink: #b69443;
   --brand-purple: #7300f3;
   --brand-violet: #1c47e5;
 
-  --brand-black: #000000;
+  --brand-black: #2d3436;
 
   --brand-grey-darker: #00000f;
   --brand-grey-dark: #30303f;
@@ -11,8 +11,9 @@
   --brand-grey-light: #82828f;
   --brand-grey-lighter: #e3e3ef;
   --brand-grey-dimmed: #f6f6ff;
+  --brand-grey-golden: #f9f8f6;
 
-  --color-primary: #00ffff;
+  --color-primary: #b69443;
 
   --brand-gradient: linear-gradient(
     to right top,
@@ -20,8 +21,4 @@
     #1c47e5 40%,
     #00ffff 110%
   );
-}
-
-.dark {
-  --background-body-transparent: rgba(00, 00, 00, 0.9);
 }

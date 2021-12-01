@@ -16,7 +16,7 @@
   display: inline-block;
   font-size: var(--font-size-mini);
   line-height: 1.2;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   color: var(--brand-white);
   background: var(--brand-alert-red);
   border-radius: var(--border-radius);

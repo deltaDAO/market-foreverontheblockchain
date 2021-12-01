@@ -1,6 +1,6 @@
 .button {
   font-family: var(--font-family-base);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-base);
   font-size: var(--font-size-small);
   text-transform: uppercase;
   border: 1px solid var(--border-color);
@@ -18,11 +18,7 @@
 
 .button,
 .address {
-  color: var(--brand-grey-lighter);
-}
-
-.button:hover .address {
-  color: var(--brand-grey-dimmed);
+  color: var(--brand-black);
 }
 
 .button:hover,
@@ -48,7 +44,7 @@
 .address {
   display: none;
   text-transform: none;
-  border-right: 1px solid var(--brand-grey-lighter);
+  border-right: 1px solid var(--brand-gold);
   padding-right: calc(var(--spacer) / 3);
   padding-left: calc(var(--spacer) / 8);
 }
@@ -64,8 +60,8 @@
 }
 
 .button svg {
-  width: 1em;
-  height: 1em;
+  width: 1.1em;
+  height: 1.1em;
   fill: var(--border-color);
   display: inline-block;
   vertical-align: middle;
@@ -73,8 +69,8 @@
   transition: transform 0.2s ease-out;
 }
 
-[aria-expanded='true'] .button svg {
-  transform: rotate(180deg);
+[aria-expanded='true'] .caret {
+  transform: rotate(135deg);
 }
 
 .status {
