@@ -14,46 +14,11 @@ export default {
   nm: '01 Dezentral',
   ddd: 0,
   assets: [
-    {
-      id: 'image_0',
-      w: 461,
-      h: 461,
-      u: '',
-      p: img_0,
-      e: 0
-    },
-    {
-      id: 'image_1',
-      w: 461,
-      h: 461,
-      u: '',
-      p: img_1,
-      e: 0
-    },
-    {
-      id: 'image_2',
-      w: 461,
-      h: 461,
-      u: '',
-      p: img_2,
-      e: 0
-    },
-    {
-      id: 'image_3',
-      w: 461,
-      h: 461,
-      u: '',
-      p: img_3,
-      e: 0
-    },
-    {
-      id: 'image_4',
-      w: 461,
-      h: 461,
-      u: '',
-      p: img_4,
-      e: 0
-    },
+    { id: 'image_0', w: 461, h: 461, u: '', p: img_0, e: 0 },
+    { id: 'image_1', w: 461, h: 461, u: '', p: img_1, e: 0 },
+    { id: 'image_2', w: 461, h: 461, u: '', p: img_2, e: 0 },
+    { id: 'image_3', w: 461, h: 461, u: '', p: img_3, e: 0 },
+    { id: 'image_4', w: 461, h: 461, u: '', p: img_4, e: 0 },
     {
       id: 'comp_0',
       layers: [
@@ -889,11 +854,7 @@ export default {
                   ml: 4,
                   bm: 0,
                   d: [
-                    {
-                      n: 'd',
-                      nm: 'dash',
-                      v: { a: 0, k: 13, ix: 1 }
-                    },
+                    { n: 'd', nm: 'dash', v: { a: 0, k: 13, ix: 1 } },
                     {
                       n: 'o',
                       nm: 'offset',
@@ -1001,11 +962,7 @@ export default {
                   ml: 4,
                   bm: 0,
                   d: [
-                    {
-                      n: 'd',
-                      nm: 'dash',
-                      v: { a: 0, k: 13, ix: 1 }
-                    },
+                    { n: 'd', nm: 'dash', v: { a: 0, k: 13, ix: 1 } },
                     {
                       n: 'o',
                       nm: 'offset',
@@ -1282,11 +1239,7 @@ export default {
                   ml: 4,
                   bm: 0,
                   d: [
-                    {
-                      n: 'd',
-                      nm: 'dash',
-                      v: { a: 0, k: 13, ix: 1 }
-                    },
+                    { n: 'd', nm: 'dash', v: { a: 0, k: 13, ix: 1 } },
                     {
                       n: 'o',
                       nm: 'offset',
@@ -1394,11 +1347,7 @@ export default {
                   ml: 4,
                   bm: 0,
                   d: [
-                    {
-                      n: 'd',
-                      nm: 'dash',
-                      v: { a: 0, k: 13, ix: 1 }
-                    },
+                    { n: 'd', nm: 'dash', v: { a: 0, k: 13, ix: 1 } },
                     {
                       n: 'o',
                       nm: 'offset',
@@ -1675,11 +1624,7 @@ export default {
                   ml: 4,
                   bm: 0,
                   d: [
-                    {
-                      n: 'd',
-                      nm: 'dash',
-                      v: { a: 0, k: 13, ix: 1 }
-                    },
+                    { n: 'd', nm: 'dash', v: { a: 0, k: 13, ix: 1 } },
                     {
                       n: 'o',
                       nm: 'offset',
@@ -1787,11 +1732,7 @@ export default {
                   ml: 4,
                   bm: 0,
                   d: [
-                    {
-                      n: 'd',
-                      nm: 'dash',
-                      v: { a: 0, k: 13, ix: 1 }
-                    },
+                    { n: 'd', nm: 'dash', v: { a: 0, k: 13, ix: 1 } },
                     {
                       n: 'o',
                       nm: 'offset',
@@ -2068,11 +2009,7 @@ export default {
                   ml: 4,
                   bm: 0,
                   d: [
-                    {
-                      n: 'd',
-                      nm: 'dash',
-                      v: { a: 0, k: 13, ix: 1 }
-                    },
+                    { n: 'd', nm: 'dash', v: { a: 0, k: 13, ix: 1 } },
                     {
                       n: 'o',
                       nm: 'offset',
@@ -2180,11 +2117,7 @@ export default {
                   ml: 4,
                   bm: 0,
                   d: [
-                    {
-                      n: 'd',
-                      nm: 'dash',
-                      v: { a: 0, k: 13, ix: 1 }
-                    },
+                    { n: 'd', nm: 'dash', v: { a: 0, k: 13, ix: 1 } },
                     {
                       n: 'o',
                       nm: 'offset',
@@ -2461,11 +2394,7 @@ export default {
                   ml: 4,
                   bm: 0,
                   d: [
-                    {
-                      n: 'd',
-                      nm: 'dash',
-                      v: { a: 0, k: 13, ix: 1 }
-                    },
+                    { n: 'd', nm: 'dash', v: { a: 0, k: 13, ix: 1 } },
                     {
                       n: 'o',
                       nm: 'offset',
@@ -2573,11 +2502,7 @@ export default {
                   ml: 4,
                   bm: 0,
                   d: [
-                    {
-                      n: 'd',
-                      nm: 'dash',
-                      v: { a: 0, k: 13, ix: 1 }
-                    },
+                    { n: 'd', nm: 'dash', v: { a: 0, k: 13, ix: 1 } },
                     {
                       n: 'o',
                       nm: 'offset',
@@ -5236,11 +5161,7 @@ export default {
               ind: 0,
               ty: 'sh',
               ix: 1,
-              ks: {
-                a: 0,
-                k: { i: [], o: [], v: [], c: true },
-                ix: 2
-              },
+              ks: { a: 0, k: { i: [], o: [], v: [], c: true }, ix: 2 },
               nm: 'Path 1',
               mn: 'ADBE Vector Shape - Group',
               hd: false
@@ -5339,11 +5260,7 @@ export default {
               ind: 3,
               ty: 'sh',
               ix: 4,
-              ks: {
-                a: 0,
-                k: { i: [], o: [], v: [], c: true },
-                ix: 2
-              },
+              ks: { a: 0, k: { i: [], o: [], v: [], c: true }, ix: 2 },
               nm: 'Path 4',
               mn: 'ADBE Vector Shape - Group',
               hd: false
@@ -5469,11 +5386,7 @@ export default {
               ind: 6,
               ty: 'sh',
               ix: 7,
-              ks: {
-                a: 0,
-                k: { i: [], o: [], v: [], c: true },
-                ix: 2
-              },
+              ks: { a: 0, k: { i: [], o: [], v: [], c: true }, ix: 2 },
               nm: 'Path 7',
               mn: 'ADBE Vector Shape - Group',
               hd: false
@@ -5539,11 +5452,7 @@ export default {
               ind: 8,
               ty: 'sh',
               ix: 9,
-              ks: {
-                a: 0,
-                k: { i: [], o: [], v: [], c: true },
-                ix: 2
-              },
+              ks: { a: 0, k: { i: [], o: [], v: [], c: true }, ix: 2 },
               nm: 'Path 9',
               mn: 'ADBE Vector Shape - Group',
               hd: false
@@ -5669,11 +5578,7 @@ export default {
               ind: 11,
               ty: 'sh',
               ix: 12,
-              ks: {
-                a: 0,
-                k: { i: [], o: [], v: [], c: true },
-                ix: 2
-              },
+              ks: { a: 0, k: { i: [], o: [], v: [], c: true }, ix: 2 },
               nm: 'Path 12',
               mn: 'ADBE Vector Shape - Group',
               hd: false
@@ -5754,11 +5659,7 @@ export default {
               ind: 13,
               ty: 'sh',
               ix: 14,
-              ks: {
-                a: 0,
-                k: { i: [], o: [], v: [], c: true },
-                ix: 2
-              },
+              ks: { a: 0, k: { i: [], o: [], v: [], c: true }, ix: 2 },
               nm: 'Path 14',
               mn: 'ADBE Vector Shape - Group',
               hd: false
@@ -5854,11 +5755,7 @@ export default {
               ind: 15,
               ty: 'sh',
               ix: 16,
-              ks: {
-                a: 0,
-                k: { i: [], o: [], v: [], c: true },
-                ix: 2
-              },
+              ks: { a: 0, k: { i: [], o: [], v: [], c: true }, ix: 2 },
               nm: 'Path 16',
               mn: 'ADBE Vector Shape - Group',
               hd: false
@@ -5933,11 +5830,7 @@ export default {
               ind: 17,
               ty: 'sh',
               ix: 18,
-              ks: {
-                a: 0,
-                k: { i: [], o: [], v: [], c: true },
-                ix: 2
-              },
+              ks: { a: 0, k: { i: [], o: [], v: [], c: true }, ix: 2 },
               nm: 'Path 18',
               mn: 'ADBE Vector Shape - Group',
               hd: false
@@ -6117,11 +6010,7 @@ export default {
               ind: 20,
               ty: 'sh',
               ix: 21,
-              ks: {
-                a: 0,
-                k: { i: [], o: [], v: [], c: true },
-                ix: 2
-              },
+              ks: { a: 0, k: { i: [], o: [], v: [], c: true }, ix: 2 },
               nm: 'Path 21',
               mn: 'ADBE Vector Shape - Group',
               hd: false
@@ -6168,11 +6057,7 @@ export default {
             },
             {
               ty: 'fl',
-              c: {
-                a: 0,
-                k: [0.272412588082, 0.302633786669, 0.311713065353, 1],
-                ix: 4
-              },
+              c: { a: 0, k: [1, 1, 1, 1], ix: 4 },
               o: { a: 0, k: 100, ix: 5 },
               r: 1,
               bm: 0,
